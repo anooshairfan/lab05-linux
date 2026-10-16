@@ -1,0 +1,24 @@
+2026-10-16T07:12:21.228346+00:00 ubuntu sudo: anooshairfan : TTY=/dev/pts/1 ; PWD=/home/anooshairfan/lab05-linux ; USER=root ; COMMAND=/usr/sbin/adduser lab5user
+2026-10-16T07:12:21.632658+00:00 ubuntu groupadd[42145]: group added to /etc/group: name=lab5user, GID=1001
+2026-10-16T07:12:21.639721+00:00 ubuntu groupadd[42145]: group added to /etc/gshadow: name=lab5user
+2026-10-16T07:12:21.641764+00:00 ubuntu groupadd[42145]: new group: name=lab5user, GID=1001
+2026-10-16T07:12:21.777162+00:00 ubuntu useradd[42150]: new user: name=lab5user, UID=1001, GID=1001, home=/home/lab5user, shell=/bin/bash, from=/dev/pts/3
+2026-10-16T07:14:33.939822+00:00 ubuntu chfn[42172]: changed user 'lab5user' information
+2026-10-16T07:14:53.556218+00:00 ubuntu gpasswd[42182]: members of group users set by root to anooshairfan,lab5user
+2026-10-16T07:16:23.945570+00:00 ubuntu su: pam_unix(su-l:auth): authentication failure; logname=anooshairfan uid=1000 euid=0 tty=/dev/pts/1 ruser=anooshairfan rhost=  user=lab5user
+2026-10-16T07:16:26.318476+00:00 ubuntu su[42222]: FAILED SU (to lab5user) anooshairfan on pts/1
+2026-10-16T07:17:16.342296+00:00 ubuntu unix_chkpwd[42261]: password check failed for user (lab5user)
+2026-10-16T07:17:16.350745+00:00 ubuntu su: pam_unix(su-l:auth): authentication failure; logname=anooshairfan uid=1000 euid=0 tty=/dev/pts/1 ruser=anooshairfan rhost=  user=lab5user
+2026-10-16T07:17:18.490381+00:00 ubuntu su[42254]: FAILED SU (to lab5user) anooshairfan on pts/1
+2026-10-16T07:17:50.429840+00:00 ubuntu unix_chkpwd[42277]: password check failed for user (lab5user)
+2026-10-16T07:17:50.437464+00:00 ubuntu su: pam_unix(su-l:auth): authentication failure; logname=anooshairfan uid=1000 euid=0 tty=/dev/pts/1 ruser=anooshairfan rhost=  user=lab5user
+2026-10-16T07:17:52.703749+00:00 ubuntu su[42274]: FAILED SU (to lab5user) anooshairfan on pts/1
+2026-10-16T07:18:13.374708+00:00 ubuntu su: pam_unix(su-l:auth): authentication failure; logname=anooshairfan uid=1000 euid=0 tty=/dev/pts/1 ruser=anooshairfan rhost=  user=lab5user
+2026-10-16T07:18:15.273790+00:00 ubuntu su[42287]: FAILED SU (to lab5user) anooshairfan on pts/1
+2026-10-16T07:19:20.075293+00:00 ubuntu sudo: anooshairfan : TTY=/dev/pts/1 ; PWD=/home/anooshairfan/lab05-linux ; USER=root ; COMMAND=/usr/bin/passwd lab5user
+2026-10-16T07:19:32.939011+00:00 ubuntu passwd[42306]: pam_unix(passwd:chauthtok): password changed for lab5user
+2026-10-16T07:19:51.989622+00:00 ubuntu su[42321]: (to lab5user) anooshairfan on pts/1
+2026-10-16T07:19:51.998939+00:00 ubuntu su[42321]: pam_unix(su-l:session): session opened for user lab5user(uid=1001) by anooshairfan(uid=1000)
+2026-10-16T07:21:19.191518+00:00 ubuntu su[42321]: pam_unix(su-l:session): session closed for user lab5user
+2026-10-16T07:21:35.801603+00:00 ubuntu sudo: anooshairfan : TTY=/dev/pts/1 ; PWD=/home/anooshairfan/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
+2026-10-16T07:21:36.013938+00:00 ubuntu sudo: anooshairfan : TTY=/dev/pts/1 ; PWD=/home/anooshairfan/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
